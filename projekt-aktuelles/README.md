@@ -18,8 +18,9 @@ Abhängigkeiten aus der package.json installieren
 $ npm install
 ```
 
-### SASS
+Jetzt muss nur noch die CSS Datei erzeugt werden und man kann sich die demo.html anschauen
 
+### SASS WATCH
 
 Entweder sass-watch.sh ausführen
 ```sh
