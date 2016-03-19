@@ -1,5 +1,6 @@
 # Folders
 .sass-cache/
+node_modules/
 
 # Files
 sass-compile-to-neu.tsv-grossenkneten.sh
