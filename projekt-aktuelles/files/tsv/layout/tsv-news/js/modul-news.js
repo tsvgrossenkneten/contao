@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+    var settings = {
+        filter: '*',
+        sortBy: 'original-order'
+    };
+
     // ISOTOPE
     var $gridIso = $('.isotope-grid').isotope({
         // options
@@ -19,6 +24,7 @@ $(document).ready(function() {
 
     $('.isotope-filter button').click(function(e) {
         var filterN = $(this).data('filter-by');
+
         $gridIso.isotope({
             filter: function() {
                 if (filterN === '*') {
@@ -31,25 +37,24 @@ $(document).ready(function() {
             }
         });
 
+        settings.filter = filterN;
         enableButton($(this));
     });
 
     $('.isotope-sorting button').click(function(e) {
         var sortN = $(this).data('sort-by');
+
+        if(sortN === 'date' && sortN === settings.sortBy){
+            sortN = 'original-order';
+        }
+
         $gridIso.isotope({
             sortBy: sortN
         });
 
+        settings.sortBy = sortN;
         enableButton($(this));
     });
-
-    $gridIso.on('arrangeComplete',
-        function(event, filteredItems) {
-            console.log('Isotope arrange completed on ' +
-                filteredItems.length + ' items');
-
-        }
-    );
 
     function enableButton(btn) {
         btn.parent().find('.active').removeClass('active');

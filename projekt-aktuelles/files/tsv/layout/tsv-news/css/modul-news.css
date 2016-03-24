@@ -1,16 +1,37 @@
 .isotope-grid .layout_full {
-  width: 50%;
+  position: relative;
+  width: 33%;
   padding: 15px;
   box-sizing: border-box; }
   .isotope-grid .layout_full img {
     max-width: 100%; }
-  .isotope-grid .layout_full .name {
-    background-color: #960011;
-    color: white;
-    font-size: 17px;
-    padding: 5px;
+  .isotope-grid .layout_full .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 12px -1px rgba(0, 0, 0, 0.75);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    margin-top: 0px; }
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .isotope-grid .layout_full .name,
+  .isotope-grid .layout_full .date {
+    background-color: white;
+    color: #960011;
+    padding: 15px; }
+  .isotope-grid .layout_full .name {
+    font-size: 17px;
+    margin: 0px; }
+  .isotope-grid .layout_full .date .calendar {
+    font-size: 25px;
+    margin-right: 5px;
+    vertical-align: middle; }
+  .isotope-grid .layout_full .date .time {
+    font-size: 15px;
+    font-weight: bold;
+    vertical-align: bottom; }
 
 /*# sourceMappingURL=modul-news.css.map */

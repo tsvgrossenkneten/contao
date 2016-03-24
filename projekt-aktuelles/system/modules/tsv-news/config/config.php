@@ -9,4 +9,3 @@
  * Front end modules
  */
 $GLOBALS['FE_MOD']['news']['newsmenubuttons'] = 'ModuleNewsMenuButtons';
-$GLOBALS['FE_MOD']['news']['newslistisotope'] = 'ModuleNewslistIsotope';
