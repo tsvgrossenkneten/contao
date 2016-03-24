@@ -1,0 +1,12 @@
+<?php $this->extend('block_unsearchable'); ?>
+
+<?php $this->block('content'); ?>
+
+<div class="btn-group-vertical">
+    <button type="button" class="btn btn-default active" data-filter-by="*">Alle</button>
+    <?php foreach ($this->archives as $archive): ?>
+    <button type="button" class="btn btn-default" data-filter-by="<?=strtolower($archive->title)?>"><?=$archive->title?></button>
+    <?php endforeach; ?>
+</div>
+
+<?php $this->endblock(); ?>
