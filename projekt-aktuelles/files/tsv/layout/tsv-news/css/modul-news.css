@@ -1,6 +1,16 @@
 .isotope-grid .layout_full {
-  width: 25%; }
-  .isotope-grid .layout_full--width2 {
-    width: 50%; }
+  width: 50%;
+  padding: 15px;
+  box-sizing: border-box; }
+  .isotope-grid .layout_full img {
+    max-width: 100%; }
+  .isotope-grid .layout_full .name {
+    background-color: #960011;
+    color: white;
+    font-size: 17px;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 0px; }
 
 /*# sourceMappingURL=modul-news.css.map */
