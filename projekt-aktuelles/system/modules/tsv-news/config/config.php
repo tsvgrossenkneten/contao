@@ -9,3 +9,5 @@
  * Front end modules
  */
 $GLOBALS['FE_MOD']['news']['newsmenubuttons'] = 'ModuleNewsMenuButtons';
+
+$GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('TsvNews', 'addTsvNews');

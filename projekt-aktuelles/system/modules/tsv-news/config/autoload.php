@@ -14,8 +14,11 @@
  */
 ClassLoader::addClasses(array
 (
-	// Modules
-	'Contao\ModuleNewsMenuButtons' => 'system/modules/tsv-news/modules/ModuleNewsMenuButtons.php',
+    // Modules
+    'Contao\ModuleNewsMenuButtons' => 'system/modules/tsv-news/modules/ModuleNewsMenuButtons.php',
+
+    // Classes
+    'TsvNews' => 'system/modules/tsv-news/classes/TsvNews.php',
 ));
 
 
@@ -24,5 +27,5 @@ ClassLoader::addClasses(array
  */
 TemplateLoader::addFiles(array
 (
-	'mod_newsmenubuttons' => 'system/modules/tsv-news/templates',
+    'mod_newsmenubuttons' => 'system/modules/tsv-news/templates',
 ));
