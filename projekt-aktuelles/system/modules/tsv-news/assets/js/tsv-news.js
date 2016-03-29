@@ -8,17 +8,16 @@ $(document).ready(function() {
     // ISOTOPE
     var $gridIso = $('.isotope-grid').isotope({
         // options
-        itemSelector: '.layout_full',
+        itemSelector: '.layout_simple_isotope',
         layoutMode: 'masonry',
         transitionDuration: '0.8s',
         getSortData: {
             name: '.name',
             date: '[data-timestamp]',
-            archive: '[data-archive]',
+            archive: '[data-archive]'
         },
         masonry: {
-            percentPosition: true,
-            columnWidth: '.layout_full'
+            percentPosition: true
         }
     });
 

@@ -2,11 +2,21 @@
 
 <?php $this->block('content'); ?>
 
-<div class="btn-group-vertical">
-    <button type="button" class="btn btn-default active" data-filter-by="*">Alle</button>
+<?php if($this->filter): ?>
+<div class="btn-group-vertical isotope-filter">
+    <button type="button" class="btn btn-default btn-block active" data-filter-by="*">Alle</button>
     <?php foreach ($this->archives as $archive): ?>
-    <button type="button" class="btn btn-default" data-filter-by="<?=strtolower($archive->title)?>"><?=$archive->title?></button>
+    <button type="button" class="btn btn-default btn-block" data-filter-by="<?=strtolower($archive->title)?>"><?=$archive->title?></button>
     <?php endforeach; ?>
 </div>
+<?php endif; ?>
+
+<?php if($this->sorting): ?>
+<div class="btn-group-vertical isotope-sorting">
+    <button type="button" class="btn btn-default btn-block active" data-sort-by="date">Datum</button>
+    <button type="button" class="btn btn-default btn-block" data-sort-by="name">Name</button>
+    <button type="button" class="btn btn-default btn-block" data-sort-by="archive">Sportart</button>
+</div>
+<?php endif; ?>
 
 <?php $this->endblock(); ?>

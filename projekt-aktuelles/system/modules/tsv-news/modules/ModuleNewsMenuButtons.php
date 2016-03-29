@@ -65,6 +65,9 @@ class ModuleNewsMenuButtons extends \ModuleNews
     protected function compile()
     {
         $newsArchives = \NewsArchiveModel::findMultipleByIds($this->news_archives);
+
+        $this->Template->filter = $this->filterbtns;
+        $this->Template->sorting = $this->sortbtns;
         $this->Template->archives = $newsArchives;
     }
 }
